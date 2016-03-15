@@ -1,0 +1,1 @@
+This code is based on [Random Quote Generator](http://codepen.io/kkoutoup/pen/zxmGLE)

@@ -1,0 +1,78 @@
+body{
+	font-family: 'Sol Pro', sans-serif;
+	color: #09b4c2;
+}
+
+#container{
+	width:800px;
+	margin:50px auto;
+	padding: 20px;
+	width:50%;
+  color:#fff
+}
+#container h2{
+	text-align:center;
+	color:#000;
+}
+#container h3{
+	text-align:center;
+	color:#000;
+  	font-family: Lato;
+}
+
+#container img {
+    display: block;
+    margin: auto;
+}
+
+#quoteContainer{
+	width:100%;
+	background: #09b4c2;
+	padding:10px;
+	margin:30px auto;
+	text-align: center;
+  height:95px;
+  font-family: Lato;
+  font-weight: Bold;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+	width:150px;
+	margin-top: 10px;
+	border:2px solid #09b4c2;
+	color:#09b4c2;
+	font-family: inherit;
+	font-weight: bold;
+	padding:8px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#09b4c2;
+	color: #fff;	
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+#quoteButton{
+	display: inline-block;
+}
+#quoteGenius{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+  font-family: Lato;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
+}
