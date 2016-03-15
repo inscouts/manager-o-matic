@@ -171,12 +171,11 @@ $(document).ready(function() {
         quote: "As long as you hit the target, they're going to go in... if the keeper don't make a save",
         name: "Ian Holloway"
     }, ];
-    $('#quoteButton').click(function(evt) {
+
+    var reloadQuote = function() {
         //define the containers of the info we target
         var quote = $('#quoteContainer p').text();
         var quoteGenius = $('#quoteGenius').text();
-        //prevent browser's default action
-        evt.preventDefault();
         //getting a new random number to attach to a quote and setting a limit
         var sourceLength = quoteSource.length;
         var randomNumber = Math.floor(Math.random() * sourceLength);
@@ -195,6 +194,11 @@ $(document).ready(function() {
                 quoteContainer.fadeIn(timeAnimation);
             });
             break;
-        }; //end for loop
-    }); //end quoteButton function
-}); //end document ready
+        };
+    }
+    $('#quoteButton').click(function(evt) {
+        evt.preventDefault();
+        reloadQuote();
+    });
+    reloadQuote();
+});
